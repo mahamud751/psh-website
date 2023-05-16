@@ -1,0 +1,13 @@
+.sign_btn {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 6px 12.52px 7.84px 13px;
+
+    width: 135.52px;
+    height: 36.84px;
+
+    background: #00BBB4;
+    border-radius: 5px;
+    color: white;
+}
