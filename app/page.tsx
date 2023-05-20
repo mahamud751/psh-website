@@ -5,8 +5,14 @@ import EmptyState from "@/app/components/EmptyState";
 import getListings, { IListingsParams } from "@/app/actions/getListings";
 import getCurrentUser from "@/app/actions/getCurrentUser";
 import ClientOnly from "./components/ClientOnly";
-import Blogs from "./components/Blogs";
+
 import Categories from "./components/navbar/Categories";
+import Slider from "./components/Home/Slider";
+import PromoOffer from "./components/Home/PromoOffer";
+import Recommended from "./components/Home/Recommended";
+import Place from "./components/Home/Place";
+import Platform from "./components/Home/Platform";
+import Review from "./components/Home/Review";
 
 interface HomeProps {
   searchParams: IListingsParams;
@@ -19,6 +25,7 @@ const Home = async ({ searchParams }: HomeProps) => {
   return (
     <>
       {" "}
+      <Slider />
       <Categories />
       {listings.length === 0 ? (
         <ClientOnly>
@@ -29,7 +36,8 @@ const Home = async ({ searchParams }: HomeProps) => {
           <Container>
             <div
               className="
-            pt-24
+              lg:px-64
+             pt-24
             grid 
             grid-cols-1 
             sm:grid-cols-2 
@@ -51,7 +59,11 @@ const Home = async ({ searchParams }: HomeProps) => {
           </Container>
         </ClientOnly>
       )}
-      <Blogs />
+      <PromoOffer />
+      <Recommended />
+      <Place />
+      <Platform />
+      <Review />
     </>
   );
 };

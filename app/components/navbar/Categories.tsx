@@ -112,6 +112,7 @@ const Categories = () => {
     <Container>
       <div
         className="
+        lg:px-64
           pt-4
           flex 
           flex-row 
