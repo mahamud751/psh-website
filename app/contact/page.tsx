@@ -34,7 +34,7 @@ const page = () => {
                 Let’s talk.
               </h2>
               <p className="text-base text-body-color leading-relaxed mb-9">
-                Have a question or need assistance? We're here to help! Use the
+                Have a question or need assistance? We are here to help! Use the
                 contact form below to get in touch with the Project Second Home
                 team
               </p>
@@ -54,7 +54,7 @@ const page = () => {
             </Typography>
             <Typography color="gray" className="mt-1 font-normal">
               If you have any question about our service . Fill the form below.
-              We’ll help you
+              We wll help you
             </Typography>
             <form className="mt-8 mb-2  max-w-screen-lg sm:w-96">
               <div className="flex">
