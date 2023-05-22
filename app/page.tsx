@@ -13,6 +13,7 @@ import Recommended from "./components/Home/Recommended";
 import Place from "./components/Home/Place";
 import Platform from "./components/Home/Platform";
 import Review from "./components/Home/Review";
+import { Splide } from "@splidejs/react-splide";
 
 interface HomeProps {
   searchParams: IListingsParams;
@@ -36,17 +37,17 @@ const Home = async ({ searchParams }: HomeProps) => {
           <Container>
             <div
               className="
-              lg:px-64
-             pt-24
-            grid 
-            grid-cols-1 
-            sm:grid-cols-2 
-            md:grid-cols-3 
-            lg:grid-cols-4
-            xl:grid-cols-5
-            2xl:grid-cols-6
-            gap-8
-          "
+               lg:px-64
+              pt-24
+             grid 
+             grid-cols-1 
+             sm:grid-cols-2 
+             md:grid-cols-3 
+             lg:grid-cols-4
+             xl:grid-cols-5
+             2xl:grid-cols-5
+             gap-8
+           "
             >
               {listings.map((listing: any) => (
                 <ListingCard

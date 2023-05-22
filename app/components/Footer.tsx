@@ -4,6 +4,60 @@ const Footer = () => {
   return (
     <div>
       <div style={{ backgroundColor: "#1A8880" }}>
+        <div className=" lg:px-64" style={{ background: "#35B0A7" }}>
+          <div className="  dark:text-gray-300">
+            <ul className="flex flex-wrap justify-center py-4 text-lg font-light">
+              <li className="w-1/2 md:w-1/3 lg:w-1/4">
+                <div className="flex">
+                  <i className="fa-solid fa-envelope text-5xl text-white"></i>
+                  <div className="text-start ms-3">
+                    <h2 className="text-white dark:text-gray-200 text-md ">
+                      Email Support
+                    </h2>
+                    <h6 className="text-white">helo@raynative.com</h6>
+                  </div>
+                </div>
+              </li>
+
+              <li className="w-1/2 md:w-1/3 lg:w-1/4">
+                <div className="flex">
+                  <i className="fa-solid fa-phone text-5xl text-white"></i>
+
+                  <div className="text-start ms-3">
+                    <h2 className="text-white dark:text-gray-200 text-md ">
+                      Phone Support
+                    </h2>
+                    <h6 className="text-white">08147758883, 08100591556</h6>
+                  </div>
+                </div>
+              </li>
+
+              <li className="w-1/2 md:w-1/3 lg:w-1/4">
+                <div className="flex">
+                  <i className="fa-brands fa-whatsapp text-5xl text-white"></i>
+                  <div className="text-start ms-3">
+                    <h2 className="text-white dark:text-gray-200 text-md ">
+                      Whatsapp Support
+                    </h2>
+                    <h6 className="text-white">08147758883</h6>
+                  </div>
+                </div>
+              </li>
+
+              <li className="w-1/2 md:w-1/3 lg:w-1/4">
+                <form className=" flex">
+                  <input
+                    className="rounded-l-lg p-4 border-t mr-0 border-b border-l text-gray-800 border-gray-200 bg-white"
+                    placeholder="your@mail.com"
+                  />
+                  <button className="px-8 rounded-r-lg bg-yellow-400  text-gray-800 font-bold p-4 uppercase border-yellow-500 border-t border-b border-r">
+                    Subscribe
+                  </button>
+                </form>
+              </li>
+            </ul>
+          </div>
+        </div>
         <footer className=" pt-4 pb-8 xl:pt-8 lg:px-64">
           <div className="  dark:text-gray-300">
             <ul className="flex flex-wrap justify-center pb-8 text-lg font-light">

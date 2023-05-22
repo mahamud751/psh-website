@@ -7,6 +7,7 @@ import Search from "./Search";
 import UserMenu from "./UserMenu";
 import NavMenu from "./NavMenu";
 import Image from "next/image";
+import Link from "next/link";
 
 interface NavbarProps {
   currentUser?: SafeUser | null;
@@ -32,12 +33,14 @@ const Navbar: React.FC<NavbarProps> = ({ currentUser }) => {
             md:gap-0
           "
           >
-            {/* <Image
-              src={"https://i.ibb.co/GpqY8tQ/PSH-web-logo-1.png"}
-              width={120}
-              height={120}
-              alt={""}
-            /> */}
+            <Link href={"/"}>
+              <Image
+                src={"https://i.ibb.co/GpqY8tQ/PSH-web-logo-1.png"}
+                width={120}
+                height={120}
+                alt={""}
+              />
+            </Link>
             <NavMenu />
             {/* <Search /> */}
             <UserMenu currentUser={currentUser} />

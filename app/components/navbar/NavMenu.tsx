@@ -18,6 +18,7 @@ import { Dialog, Popover, Tab, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Style from "../../Custom.module.css";
 import Image from "next/image";
+import Link from "next/link";
 const navigation = {
   categories: [
     {
@@ -143,9 +144,10 @@ const navigation = {
     },
   ],
   pages: [
-    { name: "Lease Your Property  ", href: "#" },
+    { name: "Lease Your Property  ", href: "/" },
     { name: "Popular Area ", href: "#" },
-    { name: "About us ", href: "#" },
+    { name: "About us ", href: "about" },
+    { name: "Contact us ", href: "contact" },
     { name: "PSH for Business ", href: "#" },
     { name: "Promo ", href: "#" },
   ],
@@ -290,12 +292,12 @@ export default function NavMenu() {
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                   {navigation.pages.map((page) => (
                     <div key={page.name} className="flow-root">
-                      <a
+                      <Link
                         href={page.href}
                         className="-m-2 block p-2 font-medium text-gray-900"
                       >
                         {page.name}
-                      </a>
+                      </Link>
                     </div>
                   ))}
                 </div>
@@ -376,13 +378,13 @@ export default function NavMenu() {
               <Popover.Group className="hidden lg:ml-24 lg:block lg:self-stretch">
                 <div className="flex h-full space-x-8">
                   {navigation.pages.map((page) => (
-                    <a
-                      key={page.name}
+                    <Link
                       href={page.href}
-                      className="flex items-center text-sm font-medium hover:text-gray-800"
+                      className="mt-2 block p-2 font-medium text-gray-900"
+                      key={page.name}
                     >
                       {page.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </Popover.Group>
