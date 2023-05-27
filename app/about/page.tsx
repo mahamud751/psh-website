@@ -13,7 +13,7 @@ const page: React.FC = () => {
             <div className="grid grid-cols-12 sm:px-5 gap-x-8 gap-y-16">
               <div className="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-6">
                 <h1 className="text-5xl font-bold text-gray-900 p-5">
-                  Your <span className={style.span_name}>Comfortable</span>{" "}
+                  Your <span className={style.span_name}>Comfortable Page</span>{" "}
                   Retreat Away From Home
                 </h1>
               </div>
