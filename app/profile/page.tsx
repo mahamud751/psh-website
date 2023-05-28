@@ -26,51 +26,55 @@ export default function Example() {
     {
       label: "Personal Info",
       value: "info",
-      icon: "Customer.png"
+      icon: "Customer.png",
     },
     {
       label: "Booking History",
       value: "booking",
-      icon: "Schedule.png"
+      icon: "Schedule.png",
     },
     {
       label: "Payment Setting",
       value: "payment",
-      icon: "Card Security.png"
+      icon: "Card Security.png",
     },
     {
       label: "Wishlist",
       value: "wishlist",
-      icon: "Heart.png"
+      icon: "Heart.png",
     },
     {
       label: "Settings",
       value: "settings",
-      icon: "Support.png"
+      icon: "Support.png",
     },
   ];
 
-
   return (
-
-
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-gray-900">
       <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-12">
         <div className="my-12">
           <Tabs value={activeTab} orientation="vertical">
-
             <TabsHeader className="w-60">
               <img src="https://i.ibb.co/jwYHgqz/Rectangle-97.png" alt="" />
-              <h2 className="font-bold text-center text-xl uppercase my-2 block mb-0">John Brown</h2>
-              <span className="mt-0 text-[#35B0A7] text-center font-bold mb-3">Member Since May 2023</span>
+              <h2 className="font-bold text-center text-xl uppercase my-2 block mb-0">
+                John Brown
+              </h2>
+              <span className="mt-0 text-[#35B0A7] text-center font-bold mb-3">
+                Member Since May 2023
+              </span>
 
-              {data.map((tab, idx)=>(
-                <Tab key={idx} className="place-items-start profileTab" value={tab.value}>
+              {data.map((tab, idx) => (
+                <Tab
+                  key={idx}
+                  className="place-items-start profileTab"
+                  value={tab.value}
+                >
                   <div className="flex items-center gap-2 p-2 ">
                     <img src={`./icon/${tab.icon}`} alt="" />
                     <span className="capitalize">{tab.label}</span>
                   </div>
-                </Tab> 
+                </Tab>
               ))}
             </TabsHeader>
 
@@ -86,7 +90,8 @@ export default function Example() {
                         <img src="./profile/Armchair.png" alt="" />
                       </div>
                     </div>
-                    <span className="text-[#35B0A7] text-2xl">15</span><span className="text-2xl"> Rooms</span>
+                    <span className="text-[#35B0A7] text-2xl">15</span>
+                    <span className="text-2xl"> Rooms</span>
                   </div>
                   <div className="info-inner text-center">
                     <div className="inner-circle mb-2">
@@ -94,7 +99,8 @@ export default function Example() {
                         <img src="./profile/Calendar.png" alt="" />
                       </div>
                     </div>
-                    <span className="text-[#35B0A7] text-2xl">43</span><span className="text-2xl"> Days</span>
+                    <span className="text-[#35B0A7] text-2xl">43</span>
+                    <span className="text-2xl"> Days</span>
                   </div>
                   <div className="info-inner text-center">
                     <div className="inner-circle mb-2">
@@ -102,7 +108,8 @@ export default function Example() {
                         <img src="./profile/Camera.png" alt="" />
                       </div>
                     </div>
-                    <span className="text-[#35B0A7] text-2xl">15</span><span className="text-2xl"> Rooms</span>
+                    <span className="text-[#35B0A7] text-2xl">15</span>
+                    <span className="text-2xl"> Rooms</span>
                   </div>
                   <div className="info-inner text-center">
                     <div className="inner-circle mb-2">
@@ -110,7 +117,8 @@ export default function Example() {
                         <img src="./profile/Vector.png" alt="" />
                       </div>
                     </div>
-                    <span className="text-[#35B0A7] text-2xl">15</span><span className="text-2xl"> Rooms</span>
+                    <span className="text-[#35B0A7] text-2xl">15</span>
+                    <span className="text-2xl"> Rooms</span>
                   </div>
                 </div>
 
@@ -136,7 +144,6 @@ export default function Example() {
                     <span>Dhaka, bangladesh</span>
                   </div>
                 </div>
-
               </TabPanel>
 
               {/* Booking history Description */}
@@ -389,59 +396,114 @@ export default function Example() {
 
               {/* Setting Tab Description */}
               <TabPanel value="setting" className="py-0">
-             {/* component */}
+                {/* component */}
                 <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col my-2">
                   <div className="-mx-3 md:flex mb-6">
                     <div className="md:w-1/2 px-3 mb-6 md:mb-0">
-                      <label className="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" htmlFor="grid-first-name">
+                      <label
+                        className="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                        htmlFor="grid-first-name"
+                      >
                         First Name
                       </label>
-                      <input className="appearance-none block w-full bg-grey-lighter text-grey-darker border border-red rounded py-3 px-4 mb-3" id="grid-first-name" type="text" placeholder="Jane" />
-                      <p className="text-red text-xs italic">Please fill out this field.</p>
+                      <input
+                        className="appearance-none block w-full bg-grey-lighter text-grey-darker border border-red rounded py-3 px-4 mb-3"
+                        id="grid-first-name"
+                        type="text"
+                        placeholder="Jane"
+                      />
+                      <p className="text-red text-xs italic">
+                        Please fill out this field.
+                      </p>
                     </div>
                     <div className="md:w-1/2 px-3">
-                      <label className="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" htmlFor="grid-last-name">
+                      <label
+                        className="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                        htmlFor="grid-last-name"
+                      >
                         Last Name
                       </label>
-                      <input className="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4" id="grid-last-name" type="text" placeholder="Doe" />
+                      <input
+                        className="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4"
+                        id="grid-last-name"
+                        type="text"
+                        placeholder="Doe"
+                      />
                     </div>
                   </div>
                   <div className="-mx-3 md:flex mb-6">
                     <div className="md:w-full px-3">
-                      <label className="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" htmlFor="grid-password">
+                      <label
+                        className="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                        htmlFor="grid-password"
+                      >
                         Password
                       </label>
-                      <input className="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 mb-3" id="grid-password" type="password" placeholder="******************" />
-                      <p className="text-grey-dark text-xs italic">Make it as long and as crazy as you'd like</p>
+                      <input
+                        className="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 mb-3"
+                        id="grid-password"
+                        type="password"
+                        placeholder="******************"
+                      />
+                      <p className="text-grey-dark text-xs italic">
+                        Make it as long and as crazy as you would like
+                      </p>
                     </div>
                   </div>
                   <div className="-mx-3 md:flex mb-2">
                     <div className="md:w-1/2 px-3 mb-6 md:mb-0">
-                      <label className="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" htmlFor="grid-city">
+                      <label
+                        className="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                        htmlFor="grid-city"
+                      >
                         City
                       </label>
-                      <input className="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4" id="grid-city" type="text" placeholder="Albuquerque" />
+                      <input
+                        className="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4"
+                        id="grid-city"
+                        type="text"
+                        placeholder="Albuquerque"
+                      />
                     </div>
                     <div className="md:w-1/2 px-3">
-                      <label className="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" htmlFor="grid-state">
+                      <label
+                        className="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                        htmlFor="grid-state"
+                      >
                         State
                       </label>
                       <div className="relative">
-                        <select className="block appearance-none w-full bg-grey-lighter border border-grey-lighter text-grey-darker py-3 px-4 pr-8 rounded" id="grid-state">
+                        <select
+                          className="block appearance-none w-full bg-grey-lighter border border-grey-lighter text-grey-darker py-3 px-4 pr-8 rounded"
+                          id="grid-state"
+                        >
                           <option>New Mexico</option>
                           <option>Missouri</option>
                           <option>Texas</option>
                         </select>
                         <div className="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker">
-                          <svg className="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
+                          <svg
+                            className="h-4 w-4"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                          >
+                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                          </svg>
                         </div>
                       </div>
                     </div>
                     <div className="md:w-1/2 px-3">
-                      <label className="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" htmlFor="grid-zip">
+                      <label
+                        className="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+                        htmlFor="grid-zip"
+                      >
                         Zip
                       </label>
-                      <input className="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4" id="grid-zip" type="text" />
+                      <input
+                        className="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4"
+                        id="grid-zip"
+                        type="text"
+                      />
                     </div>
                   </div>
                 </div>
@@ -451,8 +513,5 @@ export default function Example() {
         </div>
       </div>
     </div>
-
-
-
   );
 }
