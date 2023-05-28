@@ -412,9 +412,9 @@ export default function Example() {
                         type="text"
                         placeholder="Jane"
                       />
-                      <p className="text-xs italic">
+                      {/* <p className="text-xs italic">
                         Please fill out this field.
-                      </p>
+                      </p> */}
                     </div>
                     <div className="md:w-1/2 px-3">
                       <label
