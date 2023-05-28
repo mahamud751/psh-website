@@ -14,6 +14,7 @@ import Place from "./components/Home/Place";
 import Platform from "./components/Home/Platform";
 import Review from "./components/Home/Review";
 import { Splide } from "@splidejs/react-splide";
+import SearchModal from "./components/modals/SearchModal";
 
 interface HomeProps {
   searchParams: IListingsParams;
@@ -26,7 +27,10 @@ const Home = async ({ searchParams }: HomeProps) => {
   return (
     <>
       {" "}
+
+   
       <Slider />
+    
       <Categories />
       {listings.length === 0 ? (
         <ClientOnly>
@@ -34,6 +38,7 @@ const Home = async ({ searchParams }: HomeProps) => {
         </ClientOnly>
       ) : (
         <ClientOnly>
+            <SearchModal />
           <Container>
             <div
               className="
